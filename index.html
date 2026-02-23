@@ -1,122 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Performance Rehab & Biomechanics</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Performance Rehab | Concierge Biomechanics</title>
+
+  <!-- Premium-feel fonts (Google Fonts, no setup needed) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <!-- Top announcement / credibility strip -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span class="topbar__badge">Concierge Rehab</span>
+      <span class="topbar__text">Evidence-led rehab + biomechanics for athletes and high-performers</span>
+      <a class="topbar__link" href="#schedule">Book a consult →</a>
+    </div>
+  </div>
 
-    <!-- Navigation -->
-    <header>
-        <h1>Performance Rehab & Biomechanics</h1>
-        <nav>
-            <a href="#free">Free Plans</a>
-            <a href="#services">Services</a>
-            <a href="#intake">Intake Form</a>
-            <a href="#reviews">Reviews</a>
-            <a href="#about">About</a>
-            <a href="#schedule">Schedule</a>
-        </nav>
-    </header>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#top">
+        <span class="brand__mark">PR</span>
+        <span class="brand__name">Performance Rehab</span>
+      </a>
 
-    <!-- Hero Section -->
+      <nav class="nav" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#free">Free Resources</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#about">About</a>
+        <a class="btn btn--ghost" href="#intake">Intake</a>
+        <a class="btn btn--primary" href="#schedule">Schedule</a>
+      </nav>
+
+      <!-- Mobile menu button (minimal JS) -->
+      <button class="menuBtn" id="menuBtn" aria-expanded="false" aria-controls="mobileNav">
+        Menu
+      </button>
+    </div>
+
+    <!-- Mobile nav -->
+    <div class="mobileNav" id="mobileNav">
+      <div class="container mobileNav__inner">
+        <a href="#services">Services</a>
+        <a href="#free">Free Resources</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#about">About</a>
+        <a href="#intake">Intake</a>
+        <a href="#schedule">Schedule</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main id="top">
     <section class="hero">
-        <h2>Phase to Phase Rehab. Data-Informed. Performance Driven.</h2>
-        <p>Online rehab plans, biomechanical consultations, and guided recovery.</p>
-    </section>
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow">PRIVATE • PERFORMANCE • PRECISION</p>
+          <h1>Luxury-level rehab & biomechanics for people who take their body seriously.</h1>
+          <p class="lead">
+            Phase-to-phase guidance, criteria-based progression, and performance audits—built for literate health consumers
+            and athletes who want a real edge.
+          </p>
 
-    <!-- Free Plans Section -->
-    <section id="free">
-        <h2>Free Rehab Plans</h2>
-        <ul>
-            <li><a href="pdfs/knee-rehab.pdf" target="_blank">Free Knee Rehab Plan (PDF)</a></li>
-            <li><a href="pdfs/shoulder-rehab.pdf" target="_blank">Free Shoulder Rehab Plan (PDF)</a></li>
-        </ul>
-        <p>Download and start today.</p>
-    </section>
+          <div class="hero__cta">
+            <a class="btn btn--primary btn--lg" href="#schedule">Schedule a session</a>
+            <a class="btn btn--ghost btn--lg" href="#services">Explore services</a>
+          </div>
 
-    <!-- Paid Services -->
-    <section id="services">
-        <h2>Paid Services</h2>
-
-        <div class="card">
-            <h3>Phase-to-Phase Rehab w/ Direct Guidance</h3>
-            <p>Customized rehab progression with communication support.</p>
+          <div class="trust">
+            <div class="trust__item">
+              <span class="trust__num">5★</span>
+              <span class="trust__label">Client-rated experience</span>
+            </div>
+            <div class="trust__divider" aria-hidden="true"></div>
+            <div class="trust__item">
+              <span class="trust__num">Data</span>
+              <span class="trust__label">Criteria-led progression</span>
+            </div>
+            <div class="trust__divider" aria-hidden="true"></div>
+            <div class="trust__item">
+              <span class="trust__num">Return</span>
+              <span class="trust__label">to sport / performance</span>
+            </div>
+          </div>
         </div>
 
-        <div class="card">
-            <h3>Criteria-Based Rehab Blueprint</h3>
-            <p>Structured progression with performance metrics.</p>
-        </div>
+        <!-- Right side "luxury card" -->
+        <div class="hero__panel">
+          <div class="panelCard">
+            <p class="panelCard__title">Signature Offers</p>
 
-        <div class="card">
-            <h3>Biomechanics Consultation</h3>
-            <p>Movement analysis + optimization review.</p>
+            <div class="panelCard__row">
+              <div>
+                <p class="panelCard__name">Performance Calibration</p>
+                <p class="panelCard__desc">Last-minute tune-up for readiness, mechanics, and confidence.</p>
+              </div>
+              <span class="chip">60 min</span>
+            </div>
+
+            <div class="panelCard__row">
+              <div>
+                <p class="panelCard__name">Phase-to-Phase Concierge Rehab</p>
+                <p class="panelCard__desc">Guided progression + direct communication.</p>
+              </div>
+              <span class="chip">4–8 wks</span>
+            </div>
+
+            <div class="panelCard__row">
+              <div>
+                <p class="panelCard__name">Biomechanics Optimization</p>
+                <p class="panelCard__desc">Audit + plan to improve efficiency and reduce risk.</p>
+              </div>
+              <span class="chip">Video</span>
+            </div>
+
+            <div class="panelCard__footer">
+              <a class="btn btn--primary btn--block" href="#schedule">Reserve your slot</a>
+              <p class="fineprint">Limited weekly openings. Built for high-accountability clients.</p>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <div class="hero__glow" aria-hidden="true"></div>
     </section>
 
-    <!-- Intake Form -->
-    <section id="intake">
-        <h2>Rehab Intake Form</h2>
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>High-end services</h2>
+          <p>Premium delivery. Clear outcomes. No fluff.</p>
+        </div>
 
-        <!-- NOTE: This uses Formspree (free form handler) -->
-        <!-- You will replace the action URL with your own Formspree link -->
+        <div class="grid3">
+          <article class="card">
+            <h3>Performance Calibration</h3>
+            <p class="muted">A luxury “tune-up” before a race, event, trip, or heavy training block.</p>
+            <ul class="list">
+              <li>Readiness + movement screen</li>
+              <li>Targeted mobility & activation plan</li>
+              <li>Technique cues + efficiency upgrades</li>
+            </ul>
+            <a class="card__link" href="#schedule">Book this →</a>
+          </article>
 
-        <form action="https://formspree.io/f/yourformid" method="POST">
-            
-            <label>What surgery did you have?</label>
-            <input type="text" name="surgery" required>
+          <article class="card card--featured">
+            <div class="ribbon">Most Popular</div>
+            <h3>Phase-to-Phase Concierge Rehab</h3>
+            <p class="muted">Guided rehab with direct communication to keep you progressing.</p>
+            <ul class="list">
+              <li>Criteria-based progression</li>
+              <li>Weekly plan updates</li>
+              <li>Messaging for form + load guidance</li>
+            </ul>
+            <a class="btn btn--primary btn--block" href="#intake">Start intake</a>
+          </article>
 
-            <label>When was your surgery?</label>
-            <input type="date" name="surgery_date">
+          <article class="card">
+            <h3>Biomechanics Optimization</h3>
+            <p class="muted">A performance audit for running, lifting, jumping, and sport movement.</p>
+            <ul class="list">
+              <li>Video review (remote-friendly)</li>
+              <li>Risk reduction + efficiency plan</li>
+              <li>Return-to-performance roadmap</li>
+            </ul>
+            <a class="card__link" href="#schedule">Schedule →</a>
+          </article>
+        </div>
 
-            <label>Have you been to PT before?</label>
-            <select name="previous_pt">
+        <div class="note">
+          <strong>Pricing philosophy:</strong> This is premium, private care—designed for people who want clarity, speed, and accountability.
+          If you want “generic,” you’ll find cheaper. If you want <em>precision</em>, you’re in the right place.
+        </div>
+      </div>
+    </section>
+
+    <!-- FREE RESOURCES -->
+    <section id="free" class="section section--soft">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>Free resources</h2>
+          <p>High-signal PDFs and quick guides. Start here.</p>
+        </div>
+
+        <div class="grid2">
+          <!-- NOTE: these PDFs must exist in your repo at /pdfs/... -->
+          <a class="resource" href="pdfs/knee-rehab.pdf" target="_blank" rel="noopener">
+            <div class="resource__icon">PDF</div>
+            <div>
+              <p class="resource__title">Knee Rehab Plan</p>
+              <p class="resource__meta">Phase-based starter plan</p>
+            </div>
+            <span class="resource__arrow">→</span>
+          </a>
+
+          <a class="resource" href="pdfs/shoulder-rehab.pdf" target="_blank" rel="noopener">
+            <div class="resource__icon">PDF</div>
+            <div>
+              <p class="resource__title">Shoulder Rehab Plan</p>
+              <p class="resource__meta">Strength + control foundation</p>
+            </div>
+            <span class="resource__arrow">→</span>
+          </a>
+        </div>
+
+        <p class="fineprint">
+          Want this tailored to your sport + history? Jump to <a href="#services">concierge rehab</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- INTAKE -->
+    <section id="intake" class="section">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>Intake</h2>
+          <p>Answer a few questions so I can recommend the right service and starting plan.</p>
+        </div>
+
+        <!-- Formspree note:
+             1) Go to formspree.io
+             2) Create a form
+             3) Replace the action URL below with your Formspree URL
+        -->
+        <form class="form" action="https://formspree.io/f/yourformid" method="POST">
+          <div class="form__row">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@email.com" required>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="field">
+              <label for="surgery">What surgery did you have?</label>
+              <input id="surgery" name="surgery" type="text" placeholder="ACL reconstruction, labrum repair, etc.">
+            </div>
+            <div class="field">
+              <label for="surgery_date">When was your surgery?</label>
+              <input id="surgery_date" name="surgery_date" type="date">
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="field">
+              <label for="previous_pt">Have you been to PT before?</label>
+              <select id="previous_pt" name="previous_pt">
                 <option value="yes">Yes</option>
                 <option value="no">No</option>
-            </select>
+              </select>
+            </div>
+            <div class="field">
+              <label for="goal">Primary goal</label>
+              <input id="goal" name="goal" type="text" placeholder="Return to sport, pain-free running, strength, etc.">
+            </div>
+          </div>
 
-            <label>Email</label>
-            <input type="email" name="email" required>
+          <div class="field">
+            <label for="notes">Anything else I should know?</label>
+            <textarea id="notes" name="notes" rows="5" placeholder="Training volume, symptoms, timeline, sport, constraints..."></textarea>
+          </div>
 
-            <button type="submit">Submit Intake</button>
+          <button class="btn btn--primary btn--lg" type="submit">Submit intake</button>
+          <p class="fineprint">Submitting doesn’t lock you in—this just gets you the right recommendation.</p>
         </form>
+      </div>
     </section>
 
-    <!-- Reviews -->
-    <section id="reviews">
-        <h2>Google Reviews</h2>
-        <p>⭐⭐⭐⭐⭐ 5.0 Average Rating</p>
-        <p><a href="https://g.page/YOURGOOGLELINK" target="_blank">View All Reviews on Google</a></p>
+    <!-- REVIEWS -->
+    <section id="reviews" class="section section--soft">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>Client experience</h2>
+          <p>Results + clarity. The vibe stays professional and high-accountability.</p>
+        </div>
+
+        <div class="grid3">
+          <figure class="quote">
+            <blockquote>“The first session gave me more clarity than weeks of random advice. Felt elite.”</blockquote>
+            <figcaption>— Athlete client</figcaption>
+          </figure>
+          <figure class="quote">
+            <blockquote>“The criteria-based plan kept me progressing without guessing. Worth it.”</blockquote>
+            <figcaption>— Rehab client</figcaption>
+          </figure>
+          <figure class="quote">
+            <blockquote>“Biomechanics audit cleaned up my form and reduced my flare-ups fast.”</blockquote>
+            <figcaption>— Performance client</figcaption>
+          </figure>
+        </div>
+
+        <div class="reviewLink">
+          <!-- Replace YOURGOOGLELINK with your actual Google review link -->
+          <a class="btn btn--ghost" href="https://g.page/YOURGOOGLELINK" target="_blank" rel="noopener">
+            View Google Reviews →
+          </a>
+        </div>
+      </div>
     </section>
 
-    <!-- About -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            Doctor of Physical Therapy. Performance-focused. 
-            Specialized in biomechanics, data-driven rehab, and return-to-sport programming.
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>About</h2>
+          <p>High standard care. Sports-informed rehab. Performance mindset.</p>
+        </div>
+
+        <div class="grid2">
+          <div class="card">
+            <h3>What you get</h3>
+            <ul class="list">
+              <li>Clear milestones (criteria) from phase to phase</li>
+              <li>Biomechanics-first problem solving</li>
+              <li>Programming that respects training reality</li>
+              <li>Communication that keeps you moving forward</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Research & learning</h3>
+            <p class="muted">For the nerds (respectfully):</p>
+            <ul class="list">
+              <li><a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">PubMed search</a></li>
+              <li><a href="https://www.jospt.org/" target="_blank" rel="noopener">JOSPT</a></li>
+              <li><a href="https://bjsm.bmj.com/" target="_blank" rel="noopener">BJSM</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCHEDULE -->
+    <section id="schedule" class="section section--cta">
+      <div class="container cta">
+        <div>
+          <h2>Schedule your session</h2>
+          <p>Choose a time that fits your week. Online consults available.</p>
+          <p class="fineprint">Tip: add your Calendly link here. It’s the cleanest beginner-friendly option.</p>
+        </div>
+
+        <!-- Replace with your scheduling link -->
+        <a class="btn btn--primary btn--lg" href="https://calendly.com/YOURNAME" target="_blank" rel="noopener">
+          Book on Calendly →
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p>© <span id="year"></span> Performance Rehab. All rights reserved.</p>
+        <p class="footer__links">
+          <a href="#services">Services</a>
+          <span>•</span>
+          <a href="#intake">Intake</a>
+          <span>•</span>
+          <a href="#schedule">Schedule</a>
         </p>
-
-        <h3>Research & Further Learning</h3>
-        <ul>
-            <li><a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank">Research Article Example</a></li>
-        </ul>
-    </section>
-
-    <!-- Schedule -->
-    <section id="schedule">
-        <h2>Schedule an Online Visit</h2>
-        <p>Click below to schedule your session.</p>
-        <!-- Replace with your Calendly or scheduling link -->
-        <a class="button" href="https://calendly.com/YOURNAME" target="_blank">Book Appointment</a>
-    </section>
-
-    <footer>
-        <p>© 2026 Performance Rehab & Biomechanics</p>
+      </div>
     </footer>
+  </main>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
